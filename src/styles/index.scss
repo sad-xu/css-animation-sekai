@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  color: #353535;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  // 滚动条
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(144, 147, 153, .3);
+    border-radius: 4px;
+    &:hover {
+      background-color: rgba(144, 147, 153, .5);
+    }
+    &:active {
+      background: #bbbbbb;
+    }
+  }
+  *::-webkit-scrollbar-track {
+    background: #fff;
+  }
+}

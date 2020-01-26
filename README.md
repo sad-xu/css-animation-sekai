@@ -1,24 +1,13 @@
 # css-animation-sekai
 
-## Project setup
-```
-npm install
-```
+## 😎 介绍
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 通过 `CSS` 技术实现的，精美的视觉效果集合
 
-### Compiles and minifies for production
-```
-npm run build
-```
+**基于 `VUE-CLI`**
 
-### Lints and fixes files
-```
-npm run lint
-```
+**使用了 `SCSS`**
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 📝 TODO
+
+-- 支持 `PWA`
