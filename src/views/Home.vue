@@ -1,13 +1,17 @@
 <template>
   <div class="home">
-    <div
-      v-for="item in pageList" :key="item.title"
-      @click="selectStage(item)">
-      <span>{{ item.title }}</span>
+    <div class="page-wrapper">
+      <div
+        v-for="item in pageList" :key="item.title"
+        class="page" @click="selectStage(item)">
+        <span>{{ item.title }}</span>
+      </div>
     </div>
     <div v-if="comp" class="stage">
-      <span @click="goBack">back!</span>
-      <span @click="replay">replay</span>
+      <div class="menu">
+        <span class="back" @click="goBack">↩</span>
+        <span class="replay" @click="replay">R</span>
+      </div>
       <component :is="comp" :key="key"></component>
     </div>
   </div>
@@ -18,12 +22,15 @@ export default {
   name: 'Home',
   data() {
     return {
+      comp: null,
+      key: 0,
       pageList: [{
         title: 'lesson-1',
         path: 'LessonOne'
-      }],
-      comp: null,
-      key: 0
+      }, {
+        title: 'lesson-2',
+        path: 'LessonTwo'
+      }]
     }
   },
   created() {
@@ -40,7 +47,7 @@ export default {
     // 选中
     selectStage({ title, path }) {
       window.location.hash = title
-      this.comp = require(`./stage/${path}`).default
+      this.comp = require(`./stage/${path}.vue`).default
     },
     // 返回
     goBack() {
@@ -56,6 +63,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 10%;
+    height: 100vh;
+    background-color: #e0e0e0;
+    .page {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      border: 1px solid red;
+      cursor: pointer;
+    }
+  }
+
   .stage {
     position: fixed;
     top: 0;
@@ -63,6 +85,34 @@ export default {
     width: 100%;
     height: 100%;
     background-color: #f5f5f5;
+    overflow: hidden;
     z-index: 9;
+    .menu {
+      .back {
+        position: fixed;
+        top: 10px;
+        left: 20px;
+        padding: 3px 10px;
+        border-radius: 5px;
+        background-color: #607D8B;
+        color: #fff;
+        cursor: pointer;
+        z-index: 99999;
+      }
+      .replay {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #607D8B;
+        color: #fff;
+        cursor: pointer;
+        z-index: 99999;
+      }
+    }
   }
 </style>

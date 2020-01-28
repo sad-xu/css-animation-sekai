@@ -19,7 +19,6 @@
     height: 70%;
     overflow: hidden;
     transform: translateX(-50%) translateY(-50%);
-    border: 1px solid red;
   }
 
   .dot {
