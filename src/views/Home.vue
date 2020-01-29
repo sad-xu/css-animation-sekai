@@ -12,7 +12,7 @@
         <span class="back" @click="goBack">↩</span>
         <span class="replay" @click="replay">R</span>
       </div>
-      <component :is="comp" :key="key"></component>
+      <component :is="comp" :key="key" class="component-wrapper"></component>
     </div>
   </div>
 </template>
@@ -30,6 +30,9 @@ export default {
       }, {
         title: 'lesson-2',
         path: 'LessonTwo'
+      }, {
+        title: 'lesson-3',
+        path: 'LessonThree'
       }]
     }
   },
@@ -114,5 +117,13 @@ export default {
         z-index: 99999;
       }
     }
+  }
+  .component-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 </style>
