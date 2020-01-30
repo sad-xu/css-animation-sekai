@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="page-wrapper">
+    <div v-show="!comp" class="page-wrapper">
       <div
         v-for="item in pageList" :key="item.title"
         class="page" @click="selectStage(item)">
@@ -26,19 +26,25 @@ export default {
       key: 0,
       pageList: [{
         title: 'lesson-1',
-        path: 'LessonOne'
+        path: './stage/LessonOne'
       }, {
         title: 'lesson-2',
-        path: 'LessonTwo'
+        path: './stage/LessonTwo'
       }, {
         title: 'lesson-3',
-        path: 'LessonThree'
+        path: './stage/LessonThree'
+      }, {
+        title: 'Jack & Jones',
+        path: './jackJones/JackJones'
+      }, {
+        title: 'Jack & Jones Scenes-1',
+        path: './jackJones/Scenes1'
       }]
     }
   },
   created() {
     // 用hash记录选中项
-    let hash = window.location.hash.slice(1)
+    let hash = window.decodeURIComponent(window.location.hash.slice(1))
     if (hash) {
       let item = this.pageList.find(item => item.title === hash)
       if (item) {
@@ -50,7 +56,7 @@ export default {
     // 选中
     selectStage({ title, path }) {
       window.location.hash = title
-      this.comp = require(`./stage/${path}.vue`).default
+      this.comp = require(`${path}.vue`).default
     },
     // 返回
     goBack() {
@@ -68,6 +74,7 @@ export default {
 <style lang="scss" scoped>
   .page-wrapper {
     display: flex;
+    align-content: flex-start;
     flex-wrap: wrap;
     padding: 3% 10%;
     height: 100vh;
@@ -89,7 +96,6 @@ export default {
     height: 100%;
     background-color: #f5f5f5;
     overflow: hidden;
-    z-index: 9;
     .menu {
       .back {
         position: fixed;
