@@ -86,8 +86,8 @@
   .wrapper {
     animation: wrapper-zoom-out 272ms linear 320ms forwards;
     .cube-dot { animation: cube-dot-rotate 272ms linear 320ms forwards; }
-    .cube-dot { animation: cube-dot-rotate 272ms linear 320ms forwards; }
-    .cube-dot { animation: cube-dot-rotate 272ms linear 320ms forwards; }
+    .cube-line { animation: cube-line-rotate 272ms linear 320ms forwards; }
+    .cube-white { animation: cube-white-rotate 272ms linear 320ms forwards; }
   }
 
   @keyframes bg-round {
