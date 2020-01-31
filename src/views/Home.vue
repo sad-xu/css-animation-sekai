@@ -7,12 +7,16 @@
         <span>{{ item.title }}</span>
       </div>
     </div>
-    <div v-if="comp" class="stage">
+    <div v-if="comp" class="content">
       <div class="menu">
         <span class="back" @click="goBack">↩</span>
         <span class="replay" @click="replay">R</span>
       </div>
-      <component :is="comp" :key="key" class="component-wrapper"></component>
+      <component
+        :is="comp" :key="key"
+        class="component-wrapper"
+        :scenes-list="scenesList">
+      </component>
     </div>
   </div>
 </template>
@@ -23,6 +27,7 @@ export default {
   data() {
     return {
       comp: null,
+      // 刷新key
       key: 0,
       pageList: [{
         title: 'lesson-1',
@@ -35,11 +40,15 @@ export default {
         path: './stage/LessonThree'
       }, {
         title: 'Jack & Jones',
-        path: './jackJones/JackJones'
+        path: './jackJones/JackJones',
+        scenes: ['Scenes1', 'Scenes2', 'Scenes1']
       }, {
         title: 'Jack & Jones Scenes-1',
-        path: './jackJones/Scenes1'
-      }]
+        path: './jackJones/JackJones',
+        scenes: ['Scenes1']
+      }],
+      // 指定场景列表
+      scenesList: []
     }
   },
   created() {
@@ -54,9 +63,14 @@ export default {
   },
   methods: {
     // 选中
-    selectStage({ title, path }) {
+    selectStage({ title, path, scenes }) {
       window.location.hash = title
-      this.comp = require(`${path}.vue`).default
+      let comp = require(`${path}.vue`).default
+      // 指定某个场景
+      if (scenes) {
+        this.scenesList = scenes
+      }
+      this.comp = comp
     },
     // 返回
     goBack() {
@@ -88,7 +102,7 @@ export default {
     }
   }
 
-  .stage {
+  .content {
     position: fixed;
     top: 0;
     left: 0;

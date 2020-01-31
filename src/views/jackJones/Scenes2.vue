@@ -12,7 +12,7 @@
     width: 200px;
     height: 200px;
     background-color: pink;
-    animation: test-color 3s forwards;
+    animation: test-color 1s forwards;
   }
 
   @keyframes test-color {
