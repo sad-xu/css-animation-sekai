@@ -6,3 +6,9 @@ $j-red: #952133;
 $j-ratio: 16 / 9; // 长宽比
 
 
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

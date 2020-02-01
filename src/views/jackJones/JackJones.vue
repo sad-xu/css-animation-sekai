@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="jack-jones-bg">
     <component
       :is="comp"
       class="stage"
-      style="width: 854px;height: 480px;"
+      style="width: 854px;height: 480px;font-size:8.54px;"
       @scenesEnd="pushScenes">
     </component>
   </div>
@@ -117,12 +117,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .jack-jones-bg {
+    background-color: #e0e0e0;
+  }
   .stage {
     position: absolute;
     top: 50%;
     left: 50%;
+    background-color: $j-white;
     transform: translateX(-50%) translateY(-50%);
-    border: 1px solid red;
+    box-shadow: 0px 0px 10px 0px #b6b6b6;
     overflow: hidden;
   }
 </style>

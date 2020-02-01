@@ -18,8 +18,8 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 
 一帧一帧的分析，视频可以分为以下几段演出
 
-1. 0 - 45
-2. 46 - 214
+1. 0 - 45 ✌
+2. 46 - 214 ✌
 3. 215 - 271
 4. 272 - 349
 5. 350 - 628
@@ -57,3 +57,5 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 
 * 移动端应提示横屏
 
+* 优先百分比，以宽度为准，高度以`16:9`换算
+不能用百分比的如`border`等，在最外层加上了`font-size`为宽度的`1/100`，在内部用`em`替代`px`

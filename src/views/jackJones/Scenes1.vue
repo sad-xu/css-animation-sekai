@@ -25,12 +25,9 @@
       height: 100%;
     }
     .bg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
+      @include center;
       width: 100%;
       height: $j-ratio * 100%;
-      transform: translateX(-50%) translateY(-50%);
       background-color: $j-black;
     }
   }
