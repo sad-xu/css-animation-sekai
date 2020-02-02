@@ -41,7 +41,7 @@ export default {
       }, {
         title: 'Jack & Jones',
         path: './jackJones/JackJones',
-        scenes: ['Scenes1', 'Scenes2']
+        scenes: ['Scenes1', 'Scenes2', 'Scenes3']
       }, {
         title: 'Jack & Jones Scenes-1',
         path: './jackJones/JackJones',
@@ -50,6 +50,10 @@ export default {
         title: 'Jack & Jones Scenes-2',
         path: './jackJones/JackJones',
         scenes: ['Scenes2']
+      }, {
+        title: 'Jack & Jones Scenes-3',
+        path: './jackJones/JackJones',
+        scenes: ['Scenes3']
       }],
       // 指定场景列表
       scenesList: []
