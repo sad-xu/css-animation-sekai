@@ -54,10 +54,10 @@
 
   // animation 215 - 271  56
   .round-white {
-    animation: round-simaller 56 * 16ms 0s forwards;
+    animation: round-simaller 56 * 16ms cubic-bezier(0.79, 0.01, 0.23, 1.02) 0s forwards;
   }
   .cube-line, .cube-white {
-    animation: cube-longer 56 * 16ms 0s forwards;
+    animation: cube-longer 56 * 16ms cubic-bezier(0.79, 0.01, 0.23, 1.02) 0s forwards;
   }
 
   @keyframes round-simaller {

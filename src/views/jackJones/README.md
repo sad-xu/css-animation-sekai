@@ -21,7 +21,7 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 1. 0 - 45 ✌
 2. 46 - 214 ✌
 3. 215 - 271 ✌
-4. 272 - 349
+4. 272 - 349 ✌
 5. 350 - 628
 6. 629 - 775
 7. 776 - 836
