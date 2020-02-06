@@ -1,0 +1,49 @@
+[
+  {
+    "title": "lesson-1",
+    "path": "./stage/LessonOne"
+  }, 
+  {
+    "title": "lesson-2",
+    "path": "./stage/LessonTwo"
+  }, 
+  {
+    "title": "lesson-3",
+    "path": "./stage/LessonThree"
+  }, 
+  {
+    "title": "Jack & Jones",
+    "path": "./jackJones/JackJones",
+    "scenes": ["Scenes1", "Scenes2", "Scenes3", "Scenes4"]
+  }, 
+  {
+    "title": "Jack & Jones Scenes-1",
+    "path": "./jackJones/JackJones",
+    "scenes": ["Scenes1"]
+  }, 
+  {
+    "title": "Jack & Jones Scenes-2",
+    "path": "./jackJones/JackJones",
+    "scenes": ["Scenes2"]
+  }, 
+  {
+    "title": "Jack & Jones Scenes-3",
+    "path": "./jackJones/JackJones",
+    "scenes": ["Scenes3"]
+  }, 
+  {
+    "title": "Jack & Jones Scenes-4",
+    "path": "./jackJones/JackJones",
+    "scenes": ["Scenes4"]
+  }, 
+  {
+    "title": "Jack & Jones Scenes-5",
+    "path": "./jackJones/JackJones",
+    "scenes": ["Scenes5"]
+  },
+  {
+    "title": "Jack & Jones Scenes-6",
+    "path": "./jackJones/JackJones",
+    "scenes": ["Scenes6"]
+  }
+]

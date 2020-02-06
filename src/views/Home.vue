@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import PAGE_LIST from '@/config/page.json'
+
 export default {
   name: 'Home',
   data() {
@@ -29,36 +31,7 @@ export default {
       comp: null,
       // 刷新key
       key: 0,
-      pageList: [{
-        title: 'lesson-1',
-        path: './stage/LessonOne'
-      }, {
-        title: 'lesson-2',
-        path: './stage/LessonTwo'
-      }, {
-        title: 'lesson-3',
-        path: './stage/LessonThree'
-      }, {
-        title: 'Jack & Jones',
-        path: './jackJones/JackJones',
-        scenes: ['Scenes1', 'Scenes2', 'Scenes3', 'Scenes4']
-      }, {
-        title: 'Jack & Jones Scenes-1',
-        path: './jackJones/JackJones',
-        scenes: ['Scenes1']
-      }, {
-        title: 'Jack & Jones Scenes-2',
-        path: './jackJones/JackJones',
-        scenes: ['Scenes2']
-      }, {
-        title: 'Jack & Jones Scenes-3',
-        path: './jackJones/JackJones',
-        scenes: ['Scenes3']
-      }, {
-        title: 'Jack & Jones Scenes-4',
-        path: './jackJones/JackJones',
-        scenes: ['Scenes4']
-      }],
+      pageList: PAGE_LIST,
       // 指定场景列表
       scenesList: []
     }
