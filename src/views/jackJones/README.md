@@ -26,7 +26,7 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 6. 629 - 775 ✌
 7. 776 - 836 ✌
 8. 837 - 1083 ✌
-9. 1084 - 1123
+9. 1084 - 1123 ✌
 10. 1124 - 1198
 11. 1199 - 1324
 12. 1325 - 1339
@@ -38,6 +38,10 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 18. 1835 - 1993
 19. 1994 - 2039
 20. 2040 - 2125
+
+## TODO
+
+1. 暂停功能？
 
 ## 注意点
 

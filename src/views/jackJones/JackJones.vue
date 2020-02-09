@@ -39,6 +39,7 @@ export default {
             let stack = [this.$el]
             let num = 0
             // 遍历所有节点，获取动画数量
+            console.time('遍历节点耗时')
             while (stack.length) {
               let node = stack.pop()
               if (this.hasAnimation(node)) num++
@@ -48,6 +49,7 @@ export default {
                 stack.push(node.children[i])
               }
             }
+            console.timeEnd('遍历节点耗时')
             // 动画结束事件
             this.$el.addEventListener('animationend', e => {
               num--
