@@ -63,3 +63,9 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 
 * 优先百分比，以宽度为准，高度以`16:9`换算
 不能用百分比的如`border`等，在最外层加上了`font-size`为宽度的`1/100`，在内部用`em`替代`px`
+
+* 制作自适应的`clip-path` - `scenes-10`
+若要用`path`,`SVG`制作时以`1px`的长宽为画布，导出后的值均`[0,1]`、
+使用时加上`clipPathUnits="objectBoundingBox"`
+
+
