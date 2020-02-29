@@ -60,8 +60,7 @@
     left: 66%;
     width: 22%;
     height: $j-ratio * 22%;
-    background-color: $j-white;
-    background-image: radial-gradient($j-black 45%, rgba(0,0,0,0) 46%);
+    background-image: radial-gradient($j-black 45%, $j-white 46%);
     background-size: 5% 5%;
     transform: rotate(43deg);
   }

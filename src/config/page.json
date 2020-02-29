@@ -75,5 +75,10 @@
     "title": "Jack & Jones Scenes-12",
     "path": "./jackJones/JackJones",
     "scenes": ["Scenes12"]
+  },
+  {
+    "title": "Jack & Jones Scenes-13",
+    "path": "./jackJones/JackJones",
+    "scenes": ["Scenes13"]
   }
 ]
