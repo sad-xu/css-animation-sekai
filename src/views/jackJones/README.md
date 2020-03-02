@@ -31,7 +31,7 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 11. 1199 - 1324 ✌
 12. 1325 - 1339 ✌
 13. 1340 - 1514 🤔
-14. 1515 - 1594
+14. 1515 - 1594 ✌
 15. 1595 - 1651
 16. 1652 - 1834
 17. 1835 - 1993
@@ -70,3 +70,6 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 
 * `scenes10`clip-path有边框，如何去除?
 
+* 直死魔眼
+
+* css命名
