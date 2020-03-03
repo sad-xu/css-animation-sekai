@@ -32,7 +32,7 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 12. 1325 - 1339 ✌
 13. 1340 - 1514 🤔
 14. 1515 - 1594 ✌
-15. 1595 - 1651
+15. 1595 - 1651 ✌
 16. 1652 - 1834
 17. 1835 - 1993
 18. 1994 - 2039
@@ -73,3 +73,13 @@ Pure CSS Perfect Restore Motion Graphic Design Video
 * 直死魔眼
 
 * css命名
+
+* 15
+
+ `linear-gradient` - 条纹
+
+  `radial-gradient` - 斑点
+
+* 15
+
+  houdini 动态渐变 `https://css-houdini.rocks/animating-gradient`
